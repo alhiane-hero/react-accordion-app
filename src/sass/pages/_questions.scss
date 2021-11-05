@@ -1,0 +1,29 @@
+.Quesion {
+    padding: 1rem 1.5rem;
+    box-shadow: $lightShadow;
+    margin-bottom: 1rem;
+    border: 1px solid #eae6eb;
+    border-radius: $radius;
+    header {
+        display: flex;
+        justify-content: space-between;
+        h4 {
+            font-weight: 500;
+            letter-spacing: 1px;
+            line-height: 1.3;
+        }
+        button {
+            width: 32px;
+            height: 32px;
+            @extend %centerBox;
+            background-color: #eae6eb;
+            border-radius: 50%;
+            color: #b4345c;
+        }
+    }
+    .Desc {
+        margin-top: 0.75rem;
+        line-height: 1.7;
+        color: #324d67;
+    }
+}

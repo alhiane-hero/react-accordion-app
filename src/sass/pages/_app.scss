@@ -1,0 +1,32 @@
+.App {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+        padding: 0 15px;
+    }
+    main {
+        width: 80vw;
+        padding: 2.5rem 2rem;
+        background-color: $whiteColor;
+        border-radius: $radius;
+        box-shadow: $lightShadow;
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-gap: 1rem 2rem;
+        @media (max-width: 768px) {
+            display: block;
+            width: 100%;
+        }
+        h3 {
+            font-size: 1.75rem;
+            line-height: 1.3;
+            font-weight: 600;
+            @media (max-width: 768px) {
+                margin-bottom: 1rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
